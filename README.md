@@ -30,6 +30,8 @@ Usando o insomnia eu testei da seguinte forma:
   - Com a id na url ou no json, deleta a vaquinha
 - get:
    - Retorna todas as vaquinhas do db vaquinha
+- get(com id):
+   - Retorna uma vaquinha do db
 
 ## Consideração finais
 O centro do codigo pode ser encontrado no src/rotas/vacas.js. Já o modelo do banco de dados pode ser encontrado em src/database/vacamodel.js

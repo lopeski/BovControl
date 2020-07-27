@@ -12,18 +12,6 @@ router.get('/:id', async (req, res) => {
         return res.status(400)
     }
 });
-//Pega uma vaquinha pelo id no body
-router.get('/', async (req, res) => {
-    try {
-        const { id } = req.body;
-        const vaquinha = await vacamodel.findById(id);
-        return res.send({ vaquinha });
-    } catch (e) {
-        console.log(e);
-        return res.status(400)
-    }
-});
-//Pega todas as vaquinhas no db
 router.get('/', async (req, res) => {
     try {
         const vaquinha = await vacamodel.find();
